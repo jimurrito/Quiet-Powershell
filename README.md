@@ -79,11 +79,11 @@ Add `nixosModules.default` to your NixOS configuration. This registers the overl
 
 ## Flake Outputs
 
-| Output | Type | Description |
-|---|---|---|
-| `packages.<system>.default.quietPowershell` | package | The patched PowerShell derivation with `LogLevel` set to `Critical` |
-| `overlays.default` | overlay | Injects `quietPowershell` into `pkgs` |
-| `nixosModules.default` | NixOS module | Registers the overlay and adds `quietPowershell` to `environment.systemPackages` |
+| Output                                      | Type         | Description                                                                      |
+| ------------------------------------------- | ------------ | -------------------------------------------------------------------------------- |
+| `packages.<system>.default.quietPowershell` | package      | The patched PowerShell derivation with `LogLevel` set to `Critical`              |
+| `overlays.default`                          | overlay      | Injects `quietPowershell` into `pkgs`                                            |
+| `nixosModules.default`                      | NixOS module | Registers the overlay and adds `quietPowershell` to `environment.systemPackages` |
 
 ## License
 
